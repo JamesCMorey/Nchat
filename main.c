@@ -8,12 +8,11 @@
 int main(int argc, char *argv[])
 {
 	if (argc > 1) {
-		printf("Chosen port: %s\n", argv[1]);
-		client(argv[1]);
+		client(argv[1], argv[2]);
 		return 0;
 	}
 
-	server();
+	// client(argv[1]);
 
 	return 0;
 }
